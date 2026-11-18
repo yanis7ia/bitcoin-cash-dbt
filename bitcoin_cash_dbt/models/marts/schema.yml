@@ -1,0 +1,15 @@
+version: 2
+
+models:
+
+  - name: fct_address_balances
+    description: "Bitcoin Cash address balances."
+    columns:
+      - name: address
+        data_tests:
+          - not_null
+          - unique
+
+      - name: current_balance
+        data_tests:
+          - not_null

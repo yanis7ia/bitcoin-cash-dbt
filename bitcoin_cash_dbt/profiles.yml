@@ -1,0 +1,12 @@
+bitcoin_cash_dbt:
+  target: dev
+
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: project-bitcoin-cash-43ee-b02
+      dataset: staging
+      location: US
+      threads: 4
+      priority: interactive
